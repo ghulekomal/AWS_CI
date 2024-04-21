@@ -20,7 +20,7 @@ phases:
   build:
     commands:
       - echo "Building Docker image..."
-      - docker build -t $DOCKER_IMAGE:$DOCKER_TAG .
+      - docker build -t $DOCKER_IMAGE:$IMAGE_TAG .
       - docker tag $DOCKER_IMAGE:$IMAGE_TAG $DOCKER_USERNAME/$DOCKER_IMAGE:$IMAGE_TAG
   post_build:
     commands:
